@@ -1,4 +1,3 @@
-```markdown
 # Дипломный проект. Задание 2 — API-тесты
 
 Набор автотестов для проверки REST API сервиса **Stellar Burgers** с использованием `pytest`, `requests` и `allure`.
@@ -6,7 +5,6 @@
 ## Структура проекта
 
 ```
-
 .
 ├── data.py              # Константы API (базовый URL и эндпоинты)
 ├── helpers.py           # Утилиты для работы с API
@@ -18,7 +16,7 @@
 ├── pytest.ini           # базовые опции pytest + allure
 └── README.md
 
-````
+```
 
 ## Требования
 
@@ -30,16 +28,19 @@
 
 ```bash
 pip install -r requirements.txt
-````
+```
 
 ## Как устроен `pytest.ini`
 
 Файл `pytest.ini` задаёт дефолтные опции:
 
-* `addopts = -q --alluredir=allure-results` — при каждом запуске `pytest`:
+```ini
+[pytest]
+addopts = -q --alluredir=allure-results
+```
 
-  * тесты выполняются в «тихом» режиме (`-q`);
-  * результаты сохраняются в директорию `allure-results/` для последующего формирования отчёта.
+* тесты выполняются в «тихом» режиме (`-q`);
+* результаты сохраняются в директорию `allure-results/` для последующего формирования отчёта.
 
 ## Запуск тестов
 
@@ -48,6 +49,8 @@ pip install -r requirements.txt
 ```bash
 pytest
 ```
+
+Благодаря `pytest.ini` автоматически сформируются файлы отчёта в `allure-results/`.
 
 ## Просмотр отчёта Allure
 
