@@ -1,0 +1,32 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+
+# Pytest cache
+.pytest_cache/
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Allure results
+allure-results/
+allure-report/
+
+# Logs
+*.log
